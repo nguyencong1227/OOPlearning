@@ -12,7 +12,8 @@ ex2: Matrices(Matrices.java, Matrix2.txt)
 ex1: Point (Point.java, AccessPoint.java)
 
 ex2: Stack(Stack_array.java, Stack_linker.java, Postfix.java, infixToPostfix.java)
-infixToPostfix: Algorithm 
+
+### infixToPostfix: Algorithm 
 1. Scan the infix expression from left to right. 
 2. If the scanned character is an operand, output it. 
 3. Else, 
@@ -23,7 +24,8 @@ infixToPostfix: Algorithm
 6. Repeat steps 2-6 until infix expression is scanned. 
 7. Print the output 
 8. Pop and output from the stack until it is not empty.
-Postfix: Algorithm
+9. 
+### Postfix: Algorithm
 1) Create a stack to store operands (or values). 
 2) Scan the given expression and do the following for every scanned element. 
 …..a) If the element is a number, push it into the stack 
