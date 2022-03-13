@@ -24,7 +24,7 @@ ex2: Stack(Stack_array.java, Stack_linker.java, Postfix.java, infixToPostfix.jav
 6. Repeat steps 2-6 until infix expression is scanned. 
 7. Print the output 
 8. Pop and output from the stack until it is not empty.
-9. 
+
 ### Postfix: Algorithm
 1) Create a stack to store operands (or values). 
 2) Scan the given expression and do the following for every scanned element. 
