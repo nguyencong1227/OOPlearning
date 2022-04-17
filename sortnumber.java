@@ -1,26 +1,31 @@
-import java.util.Arrays;
-import java.util.Scanner;
 public class sortnumber {
         public static void main (String [] args) {
-		int n;
-                Scanner scanner = new Scanner(System.in);
-		do{
-			System.out.print("enter number of element: ");
-			n = scanner.nextInt();
-		}while (n<0);
+			int[] a = new int[args.length];
+			for(int i=0; i<a.length; i++) a[i] = Integer.parseInt(args[i]);
 
-		int array[] = new int[n];
-		System.out.println("enter element: ");
-		for (int i = 0; i < n; i++){
-			System.out.print("enter the element " + (i+1) + ": ");
-			array[i] = scanner.nextInt();
+			for(int i=0; i<a.length; i++) System.out.print(a[i] + " ");
+			System.out.println();
+
+			//Sort
+			int tmp, total = 0;
+			double age;
+			for (int i=0; i<a.length - 1; i++)
+				for (int j = i+1; j<a.length; j++){
+					if(a[i]>a[j]){
+						tmp = a[j];
+						a[i] = a[j];
+						a[j] = tmp;
+					}
+				}
+			
+			for(int i=0;i<a.length; i++) System.out.print(a[i] + " ");
+			System.out.println();
+
+			for(int i=0;i<a.length; i++){
+				total += a[i];
+			}
+			age = total / a.length;
+			System.out.print("average: " + age);
 		}
-                Arrays.sort(array);
-		System.out.println("Sorting number");
-                for (Object number : array){  
-
-                        System.out.println("Number = " + number);
-                }
-	}
 }
 
