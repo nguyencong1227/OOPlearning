@@ -1,18 +1,19 @@
 public class sortnumber {
         public static void main (String [] args) {
-			int[] a = new int[args.length];
-			for(int i=0; i<a.length; i++) a[i] = Integer.parseInt(args[i]);
+			int[] a = { 13, 7, 6, 45, 21, 9, 101, 102 };
+			//for(int i=0; i<a.length; i++) a[i] = Integer.parseInt(args[i]);
 
 			for(int i=0; i<a.length; i++) System.out.print(a[i] + " ");
 			System.out.println();
 
 			//Sort
-			int tmp, total = 0;
+			int tmp; 
+			double total = 0;
 			double age;
 			for (int i=0; i<a.length - 1; i++)
 				for (int j = i+1; j<a.length; j++){
 					if(a[i]>a[j]){
-						tmp = a[j];
+						tmp = a[i];
 						a[i] = a[j];
 						a[j] = tmp;
 					}

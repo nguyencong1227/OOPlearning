@@ -9,7 +9,7 @@ public class AccessPoint {
         System.out.println("Distance between p1 and p2 is: " + Point.distance(p1, p2));
         System.out.println("Distance between p1 and p2 is: " + Point.distance(p2, p3));
         System.out.println("Distance between p1 and p2 is: " + Point.distance(p3, p1));
-        Point.lineFromPoints(p1,p2);
-        
+        Point.lineFromPoints(p2,p3);
+
     }
 }
