@@ -6,7 +6,7 @@ public class Point3d extends Point {
     double z;
 
     public Point3d(double x, double y, double z) {
-        super();
+        super(x, y);
         this.z = z;
     }
 
@@ -25,9 +25,15 @@ public class Point3d extends Point {
         double a1 = P2.x - P1.x;
         double b1 = P2.y - P1.y;
         double c1 = P2.z - P1.z;
-        double a2 = P3.x - P3.x;
+        double a2 = P3.x - P1.x;
         double b2 = P3.y - P1.y;
         double c2 = P3.z - P1.z;
+        System.out.println(a1);
+        System.out.println(a2);
+        System.out.println(b1);
+        System.out.println(b2);
+        System.out.println(c1);
+        System.out.println(c2);
         double a = b1 * c2 - b2 * c1;
         double b = a2 * c1 - a1 * c2;
         double c = a1 * b2 - b1 * a2;
@@ -42,7 +48,7 @@ public class Point3d extends Point {
         double a1 = P2.x - P1.x;
         double b1 = P2.y - P1.y;
         double c1 = P2.z - P1.z;
-        double a2 = P3.x - P3.x;
+        double a2 = P3.x - P1.x;
         double b2 = P3.y - P1.y;
         double c2 = P3.z - P1.z;
         double a = b1 * c2 - b2 * c1;
