@@ -50,9 +50,9 @@ class Point {
     // Function to find the line given two points
     static void lineFromPoints(Point P, Point Q)
     {
-        int a = Q.y - P.y;
-        int b = P.x - Q.x;
-        int c = a * (P.x) + b * (P.y);
+        double a = Q.y - P.y;
+        double b = P.x - Q.x;
+        double c = a * (P.x) + b * (P.y);
  
         if (b < 0) {
             System.out.println(
