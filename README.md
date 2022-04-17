@@ -30,4 +30,9 @@ ex2: Stack(Stack_array.java, Stack_linker.java, Postfix.java, infixToPostfix.jav
 2) Scan the given expression and do the following for every scanned element. 
 …..a) If the element is a number, push it into the stack 
 …..b) If the element is an operator, pop operands for the operator from the stack. Evaluate the operator and push the result back to the stack 
-3) When the expression is ended, the number in the stack is the final answer 
+3) When the expression is ended, the number in the stack is the final answer
+
+## practice week1
+- Ex1: sortnumber.java
+- Ex2: Point.java, AccessPoint.java
+- Ex3: Point3d.java, Point.java, AccessPoint3d.java
