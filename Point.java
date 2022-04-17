@@ -47,4 +47,23 @@ class Point {
             System.out.println("Area is: " + temp);
     }
 
+    // Function to find the line given two points
+    static void lineFromPoints(Point P, Point Q)
+    {
+        int a = Q.y - P.y;
+        int b = P.x - Q.x;
+        int c = a * (P.x) + b * (P.y);
+ 
+        if (b < 0) {
+            System.out.println(
+                "The line passing through points P and Q is: "
+                + a + "x - " + b + "y = " + c);
+        }
+        else {
+            System.out.println(
+                "The line passing through points P and Q is: "
+                + a + "x + " + b + "y = " + c);
+        }
+    }
+
 }
