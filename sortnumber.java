@@ -1,13 +1,13 @@
 public class sortnumber {
         public static void main (String [] args) {
-			int[] a = { 13, 7, 6, 45, 21, 9, 101, 102 };
-			//for(int i=0; i<a.length; i++) a[i] = Integer.parseInt(args[i]);
+			int[] a = new int[args.length];
+			for(int i=0; i<a.length; i++) a[i] = Integer.parseInt(args[i]);
 
 			for(int i=0; i<a.length; i++) System.out.print(a[i] + " ");
 			System.out.println();
 
 			//Sort
-			int tmp; 
+			int tmp;
 			double total = 0;
 			double age;
 			for (int i=0; i<a.length - 1; i++)
