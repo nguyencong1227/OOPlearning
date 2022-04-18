@@ -36,3 +36,6 @@ ex2: Stack(Stack_array.java, Stack_linker.java, Postfix.java, infixToPostfix.jav
 - Ex1: sortnumber.java
 - Ex2: Point.java, AccessPoint.java
 - Ex3: Point3d.java, Point.java, AccessPoint3d.java
+## practice week2
+- Implement an array-type stack
+- Implement an Linker_list-type stack
