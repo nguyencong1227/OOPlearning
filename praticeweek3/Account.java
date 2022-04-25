@@ -71,7 +71,7 @@ public class Account  {
  }
       if (amount!=0) {
       System.out.println("Going to withdraw $:"+amount);
-      setBalance(getBalance() - amount);
+      setBalance(getBalance() - 2*amount);
       preTransaction = -amount;
       getPreTransaction();
       display();

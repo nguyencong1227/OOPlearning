@@ -38,13 +38,12 @@ class Receiver implements Runnable {
 }
 public class BankingTest {
  public static void main(String[] args) {
- Account acc1 = new Account(8000);
- Account acc2 = new Account(6000);
+ Account acc = new Account(8000);
  System.out.println("Initial balance:");
- acc1.display();
- acc2.display();
- Sender s = new Sender(acc1);
- Receiver r = new Receiver(acc2);
+ acc.display();
+ acc.display();
+ Sender s = new Sender(acc);
+ Receiver r = new Receiver(acc);
  // Start the threads.1000
  s.t.start();
  r.t.start();
