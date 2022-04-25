@@ -16,7 +16,7 @@ public class Clock extends JPanel implements Runnable
   g.setFont(new Font("TimesRoman", Font.BOLD, 20));  
   g.setColor(Color.white);  
   g.fillOval(xcenter - 150, ycenter - 150, 300, 300);  
-  g.setColor(Color.red);  
+  g.setColor(Color.blue);  
   g.drawString("Anolog Clock", 113, 300);  
   g.setColor(Color.green);  
   g.drawString("9", xcenter - 145, ycenter + 0);  
