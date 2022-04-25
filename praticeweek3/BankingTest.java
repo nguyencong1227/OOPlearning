@@ -7,18 +7,16 @@ class Sender implements Runnable {
  Thread t;
  Scanner sc;
  Sender(Account acc) {
- this.acc = acc;
- t = new Thread(this, "Sender");
- sc = new Scanner(System.in);
+    this.acc = acc;
+    t = new Thread(this, "Sender");
+    sc = new Scanner(System.in);
  }
  public void run() {
  
- while(true) {
- 
- int amount =sc.nextInt();
- acc.deposit(amount);
-
- }
+    while(true) {
+    int amount =sc.nextInt();
+    acc.deposit(amount);
+    }
  }
 }
 class Receiver implements Runnable {
@@ -40,12 +38,14 @@ class Receiver implements Runnable {
 }
 public class BankingTest {
  public static void main(String[] args) {
- Account acc = new Account(8000);
+ Account acc1 = new Account(8000);
+ Account acc2 = new Account(6000);
  System.out.println("Initial balance:");
- acc.display();
- Sender s = new Sender(acc);
- Receiver r = new Receiver(acc);
- // Start the threads.
+ acc1.display();
+ acc2.display();
+ Sender s = new Sender(acc1);
+ Receiver r = new Receiver(acc2);
+ // Start the threads.1000
  s.t.start();
  r.t.start();
  System.out.println("Press Control-C to stop.");

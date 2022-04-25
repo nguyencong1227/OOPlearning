@@ -42,7 +42,7 @@ public class Account  {
           }
          // withdraw(amount);
             this.amount=amount;
-            setBalance(getBalance()+amount);
+            setBalance(getBalance() + amount);
             display();
           System.out.println(Thread.currentThread().getName() + " completes the deposit of $ " + amount);
       } else {
@@ -71,11 +71,10 @@ public class Account  {
  }
       if (amount!=0) {
       System.out.println("Going to withdraw $:"+amount);
-      balance = balance - amount;
-      
-      setBalance(balance);
-      display();
+      setBalance(getBalance() - amount);
       preTransaction = -amount;
+      getPreTransaction();
+      display();
       }
        valueSet = false;
  notify();
@@ -96,7 +95,7 @@ public class Account  {
       }
   }
   synchronized void display(){
-      System.out.println("So du tai khoan la:"+balance);
+      System.out.println("So du tai khoan la:" +balance);
   }
 
 }
